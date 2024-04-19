@@ -1,39 +1,38 @@
-
 /***** Custom Properties *****/
 
 :root {
-    --first-color: rgb(217, 0, 98);
-    --first-alpha-color: rgba(217, 0, 98, 0.75);
-    --second-color: rgb(20, 25, 45);
-    --second-alpha-color: rgba(20, 25, 45, 0.75);
-    --third-color: rgb(80, 20, 100);
-    --third-alpha-color: rgba(80, 20, 100, 0.75);
-  
-    --link-color: rgb(80, 158, 227);
-    --link-alpha-color: rgba(80, 158, 227, 0.75);
-  
-    --bg-color: rgb(245, 245, 245);
-    --bg-alpha-color: rgba(245, 245, 245, 0.75);
-  }
+  --first-color: rgb(217, 0, 98);
+  --first-alpha-color: rgba(217, 0, 98, 0.75);
+  --second-color: rgb(20, 25, 45);
+  --second-alpha-color: rgba(20, 25, 45, 0.75);
+  --third-color: rgb(80, 20, 100);
+  --third-alpha-color: rgba(80, 20, 100, 0.75);
+
+  --link-color: rgb(80, 158, 227);
+  --link-alpha-color: rgba(80, 158, 227, 0.75);
+
+  --bg-color: rgb(245, 245, 245);
+  --bg-alpha-color: rgba(245, 245, 245, 0.75);
+}
 
 /***** Reset Styles *****/
 
-body{
-    font-family: 'Raleway', sans-serif;
+body {
+  font-family: "Raleway", sans-serif;
 }
 
 a {
   color: var(--link-color);
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-a:hover{
+a:hover {
   color: var(--first-color);
 }
 
 /***** Bootstrap Styles *****/
 
-.bg-dark{
+.bg-dark {
   background-color: var(--second-color) !important;
 }
 
@@ -45,7 +44,7 @@ a:hover{
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23d90062'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
-.dropdown-item{
+.dropdown-item {
   color: var(--first-alpha-color);
   font-weight: bold;
   transition-property: color;
@@ -53,34 +52,33 @@ a:hover{
   transition-timing-function: ease-in-out;
 }
 
-.dropdown-item:hover{
+.dropdown-item:hover {
   color: var(--third-alpha-color);
 }
 
-.navbar-brand img{
+.navbar-brand img {
   height: 3rem;
   width: auto;
 }
 
-.nav-item{
+.nav-item {
   transition-property: background-color;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
 }
 
-.nav-item:hover{
+.nav-item:hover {
   background-color: var(--first-alpha-color);
-
 }
 
-.nav-link{
+.nav-link {
   margin-left: 0.5rem;
   color: var(--first-color);
-  font-size: 1.10rem;
+  font-size: 1.1rem;
   font-weight: bold;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   color: var(--bs-white);
 }
 
@@ -96,24 +94,28 @@ a:hover{
 
 /***** My Styles *****/
 
-.bg-alpha-color{
+.bg-alpha-color {
   background-color: var(--bg-alpha-color);
 }
 
-.bg-first-color{
+.bg-first-color {
   color: var(--first-color);
 }
 
-.bg-gradient{
-  background: rgb(36,151,210);
-  background: linear-gradient(90deg, rgba(36,151,210,1) 31%, rgba(34,205,155,1) 70%) !important;
+.bg-gradient {
+  background: rgb(36, 151, 210);
+  background: linear-gradient(
+    90deg,
+    rgba(36, 151, 210, 1) 31%,
+    rgb(147, 217, 250) 70%
+  ) !important;
 }
 
-.bg-third-color{
+.bg-third-color {
   background-color: var(--third-color);
 }
 
-.bg-color{
+.bg-color {
   background-color: var(--bg-color);
 }
 
@@ -124,50 +126,50 @@ a:hover{
   background-position: center;
 }
 
-.bg-second-alpha-color{
+.bg-second-alpha-color {
   background-color: var(--second-alpha-color);
 }
 
-.scale-transition{
+.scale-transition {
   transition-property: transform;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
 }
 
-.scale-transition:hover{
+.scale-transition:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
 
-.text-third-color{
+.seccion-como-trabajamos {
+  background-color: rgba(255, 255, 255, 0.719);
+}
+
+.text-third-color {
   color: var(--third-color);
 }
 
 /***** Medias queries *****/
 
 /* Small devices */
-@media (min-width: 576px){
-    
+@media (min-width: 576px) {
 }
 
 /* Medium devices */
-@media (min-width: 768px){
-  .nav-item:hover{
-    background-color: transparent
-  } 
+@media (min-width: 768px) {
+  .nav-item:hover {
+    background-color: transparent;
+  }
 }
 
 /* Large devices */
-@media (min-width: 992px){
-    
+@media (min-width: 992px) {
 }
 
 /* X-Large devices */
-@media (min-width: 1200px){
-    
+@media (min-width: 1200px) {
 }
 
 /* XX-Large devices */
-@media (min-width: 1400px){
-    
+@media (min-width: 1400px) {
 }
